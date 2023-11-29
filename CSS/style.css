@@ -1,0 +1,1484 @@
+/*=============================================================================================================================
+===================================RESET HTML=================================================================================*/ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/*=============================================================================================================================
+===================================CONFIGURACIONES GENERALES=================================================================================*/ 
+
+
+h1, h2, h3, h4, p, a, label {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    color: white;
+    font-size: 3.5em; /* 56px / 16 = 3.5rem */
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    text-align: left;
+    display: inline;
+}
+
+h2 {
+    color: white;
+    font-size: 2.5rem; /* 48px / 16 = 3rem */
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+h3 {
+    color: white;
+    font-size: 2.5rem; /* 40px / 16 = 2.5rem */
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+h4 {
+    color: white;
+    font-size: 2rem; /* 32px / 16 = 2rem */
+    font-style: normal;
+    font-weight: 700;
+}
+
+h5 {
+    color: white;
+    font-size: 1.5rem; /* 24px / 16 = 1.5rem */
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+P, label, a {
+    font-size: 1.125rem; 
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+}
+
+
+/*===========================NAVBAR ================================================================================*/ 
+
+.navbar {
+    color: black;
+    background-color: black;
+    border-bottom: white;
+    border-style: solid;
+    border-width: 0.0625rem;
+    padding: 20px 0px;
+}
+
+nav div {
+    color: black;
+    background-color: black;
+    margin-right: 6.25rem;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show  {
+    color: white;
+}
+
+.nav-link.active {
+    font-size: 1.25rem;
+    margin: 0rem 0.7rem
+}
+
+.navlogo {
+    margin-left: 0.50rem;
+}
+
+.container-nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.container-fluid {
+    background-color: black;
+}
+
+.container {
+    margin: 0;
+}
+
+.navbar-toggler {
+    color: #ffffff;
+}
+
+.navbar-toggler, .navbar-collapse {
+    justify-content: right;
+}
+
+@media (max-width:1024px) {
+    .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+        display: flex;
+    }
+
+}
+
+/*=============================================================================================================================
+===================================ESTILO FOOTER =================================================================================*/
+
+.footer {
+    padding: 0rem 2rem;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    border-top: white;
+    border-style: solid;
+    border-width: 0.0625rem;
+}
+
+
+.creditosFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.containerCreditos {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    text-decoration: none;
+}
+
+.linksCreditosFooter {
+    color: white;
+}
+
+@media (max-width:576px) {
+
+    .creditosFooter {
+        margin-bottom: 2rem;
+    }
+
+    .containerCreditos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width:425px) {
+
+    .creditosFooter {
+        margin-bottom: 2rem;
+    }
+
+    .containerCreditos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+
+
+}
+
+
+/*================================ PAGE INDEX =================================================================================*/
+
+/*===================================================================
+======================SECTION BANNER=========================*/
+
+.sectionBanner {
+    display: flex;
+    height: 80vh;
+    align-items: center;
+    padding: 7rem 1rem;
+}
+
+.bannerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    gap: 2rem;
+}
+
+.bannerContenido {
+    margin-bottom: 2.5rem;
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.subtitle-banner {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+
+
+@media (max-width:768px) {
+
+    .sectionBanner {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        align-items: center;
+        padding: 3rem 1rem;
+    }
+
+    .bannerContainer {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bannerContenido {
+        justify-content: center;
+        
+    }
+
+    .title-banner {
+        text-align: center;
+    }
+
+    .subtitle-banner {
+        text-align: center;
+    }
+
+    .container-button-banner {
+        text-align: center;
+    }
+
+    .container-img-banner {
+        max-width: 32rem;
+    }
+}
+
+@media (max-width:576px) {
+
+    .title-banner {
+        text-align: center;
+    }
+
+
+    .container-img-banner {
+        max-width: 25rem;
+    }
+
+}
+
+@media (max-width:425px) {
+
+    .title-banner {
+        font-size: 46px;
+    }
+
+    .subtitle-banner {
+        font-size: 28px;
+    }
+}
+
+
+/*===================================================================
+==================SECTION HEADER=====================================*/
+
+.sectionHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1rem;
+}
+
+.headerContainer {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerContent {
+    font-size: 3.5rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+@media (max-width:425px) {
+
+    .headerContent {
+        font-size: 2.5rem;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+/*===================================================================
+==================FEATURES=========================*/
+
+
+.sectionProcesoweb {
+    padding: 7rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.containerProcesoweb {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.imagenContainer {
+    width: 40%;
+}
+
+.contentProcesoweb {
+    width: 60%;
+}
+
+.ContainerPasosProcesoweb {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.PasoProcesoweb {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4rem;
+}
+
+.tituloPaso {
+    max-width: 100%;
+    margin-bottom: 0.625rem;
+}
+
+.contentPaso {
+    padding-top: 1rem;
+    max-width: 100%;
+}
+
+.numeroPaso {
+    width: 15.625rem;
+    font-size: 6.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+@media (max-width:1024px) {
+
+    .sectionProcesoweb {
+        padding: 3rem 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .containerProcesoweb {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3.5rem;
+    }
+
+    .imagenContainer {
+        width: 60%;
+    }
+
+    .contentProcesoweb {
+        width: 100%;
+        display: flex;
+    }    
+}
+
+@media (max-width:768px) {
+
+    .sectionProcesoweb {
+        padding: 2rem 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+    }
+
+    .containerProcesoweb {
+        gap: 2rem;
+    }
+
+    .imagenContainer {
+        width: 80%;
+    }
+
+    .contentProcesoweb {
+        width: 100%;
+        display: flex;
+    }
+}
+
+@media (max-width:425px) {
+
+    .containerProcesoweb {
+        gap: 4rem;
+    }
+
+    .ContainerPasosProcesoweb {
+        padding: 0;
+    }
+
+    .contentProcesoweb {
+        padding: 0;
+    }
+
+    .PasoProcesoweb {
+        gap: 2rem;
+    }
+
+    .numeroPaso {
+        font-size: 3.5rem;
+    }
+}
+
+/*===================================================================
+================SECTION PORTFOLIO=========================*/
+
+.sectionPortfolio {
+    padding: 3.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.tituloPortfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+.contenidoPortfolio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.portfolioGrid {
+    display: grid;
+    grid-template-areas:
+    "containerCard1 containerCard2"
+    "containerCard3 containerCard4";
+    column-gap: 3rem;
+    row-gap: 2rem;
+    justify-content: center;
+}
+
+.containerCard1 {
+    max-width: 35rem;
+    padding-right: 0;
+    background-color: transparent;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 0.03125rem solid white;
+}
+
+.containerCard2 {
+    max-width: 35rem;
+    padding-right: 0;
+    background-color: transparent;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 0.03125rem solid white;
+}
+.containerCard3 {
+    max-width: 35rem;
+    padding-right: 0;
+    background-color: transparent;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 0.03125rem solid white;
+}
+.containerCard4 {
+    max-width: 35rem;
+    padding-right: 0;
+    background-color: transparent;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 0.03125rem solid white;
+}
+
+.card-title {
+    color: white;
+}
+
+.textoButton {
+    font-style: normal;
+    font-weight: 400;
+    height: 0.75rem;
+    align-content: flex-start;
+    color: #1890FF;
+}
+
+@media (max-width:768px) {
+
+    .portfolioGrid {
+        column-gap: 0;
+    }
+}
+
+@media (max-width:576px) {
+
+    .portfolioGrid {
+        display: grid;
+        grid-template-areas:
+        "containerCard1"
+        "containerCard2"
+        "containerCard3"
+        "containerCard4";
+        column-gap: 3rem;
+        row-gap: 2rem;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width:425px) {
+
+    .contenidoPortfolio {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .portfolioGrid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+/*===================================================================
+================INICIO SECTION PRICING INDEX=========================*/
+
+.sectionPricing {
+    padding: 3.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.title-pricing-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+.contenidoPricing {
+    display: flex;
+    align-items: center;
+    gap: 3.125rem;
+    align-self: stretch;
+}
+
+.tarjetaPricingIndex {
+    background: #1890FF;
+    border: 0.0625rem white solid;
+    border-radius: var(--bs-border-radius);
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.tituloTarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.card-price {
+    font-size: 3.5rem;
+    margin: 0px;
+}
+
+.contentTarjeta {
+    padding: 1rem 0rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    align-self: stretch;
+    border-top: 0.0625rem white solid;
+    border-bottom: 0.0625rem white solid;
+}
+
+.detallePricing {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    margin: 0px;
+}
+
+.itemDetalle {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    align-self: stretch;
+}
+
+.item-text {
+    margin: 0px;
+}
+
+.buttonPricing {
+    width: 100%;
+    height: 3rem;
+    border-radius: var(--bs-border-radius);
+    display: flex;
+    padding: 0.75rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    align-self: stretch;
+    font-size: 1.125rem;
+}
+
+@media (max-width:768px) {
+
+    .contenidoPricing {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:576px) {
+
+    .contenidoPricing {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .detallePricing {
+        padding: 0;
+    }
+
+}
+
+@media (max-width:425px) {
+
+    .contenidoPricing {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .detallePricing {
+        padding: 0;
+    }
+}
+
+/*===================================================================
+================INICIO SECTION FORMULARIO=========================*/
+
+.sectionFormulario {
+    background-color: black;
+    display: flex;
+    padding: 3.5rem 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.5rem;
+}
+
+.containerFormulario {
+    display: flex;
+    align-items: flex-start;
+    gap: 2.5rem;
+    align-self: stretch;
+}
+
+.descripcionFormulario {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    flex: 1 0 0;
+}
+
+.formularioTitulo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    align-self: stretch;
+}
+
+.contactoFormulario {
+    display: flex;
+    padding: 0.25rem 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.contactoEmail {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.Formulario {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    flex: 1 0 0;
+}
+
+.inputFormulario {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+    align-self: stretch;
+}
+
+.estiloFormulario {
+    border-radius: var(--bs-border-radius);
+    display: flex;
+    height: 3rem;
+    padding: 0.375rem;
+    align-items: center;
+    gap: 0.25rem;
+    align-self: stretch;
+}
+
+.textareaFormulario {
+    margin-bottom: 1rem;
+    border-radius: var(--bs-border-radius);
+    display: flex;
+    height: 9.75rem;
+    padding: 0.375rem;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+@media (max-width:768px) {
+
+    .containerFormulario {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .descripcionFormulario {
+        width: 100%;
+    }
+
+    .Formulario {
+        width: 100%;
+    }
+
+    .formularioTitulo {
+        text-align: center;
+    }
+
+    .title-form {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contactoFormulario {
+        width: 100%;
+    }
+
+    .contactoEmail {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/*=============================================================================================================================
+=================================== PAGE SERVICIOS =================================================================================*/
+
+.sectionBanner-Srv1 {
+    display: flex;
+    height: 80vh;
+    align-items: center;
+    padding: 7rem 3rem;
+}
+
+.container-banner-Srv1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    gap: 2rem;
+}
+
+.banner-contenido-Srv1 {
+    margin-bottom: 2.5rem;
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.sectionBanner-Srv2 {
+    display: flex;
+    height: 80vh;
+    align-items: center;
+    padding: 7rem 3rem;
+}
+
+.container-banner-Srv2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    gap: 2rem;
+}
+
+.banner-contenido-Srv2 {
+    margin-bottom: 2.5rem;
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.section-Pricing {
+    padding: 7rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5rem;
+}
+
+.tituloPrincing {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.textoPricing {
+    margin: 0;
+}
+
+.contenidoPricing {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    align-items: flex-start;
+}
+
+.listaDescripcion {
+    display: flex;
+    padding: 2rem 0rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.itemLista {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    align-self: stretch;
+}
+
+@media (max-width:1024px)   {
+
+    .contenidoPricing {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        align-items: flex-start;
+    }
+
+    .detallePricing {
+        padding: 0;
+    }
+    
+}
+
+@media (max-width:768px) {
+
+    .sectionBanner-Srv1,.sectionBanner-Srv2 {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 4rem 3rem;
+    }
+
+    .container-banner-Srv1, .container-banner-Srv2 {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner-contenido-Srv1 {
+        justify-content: center;
+        
+    }
+
+    .text-banner-Srv1, .text-banner-Srv2 {
+        text-align: center;
+    }
+
+    .section-Pricing {
+        padding: 4rem 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.5rem;
+    }
+
+}
+
+    @media (max-width:576px) {
+
+        .sectionBanner-Srv1,.sectionBanner-Srv2 {
+            padding: 3.5rem 1.5rem;
+        }
+
+        .section-Pricing {
+            padding: 2rem 1.5rem;
+        }
+
+}
+
+@media (max-width:425px) {
+
+    .sectionBanner-Srv1,.sectionBanner-Srv2 {
+        padding: 3.5rem 1rem;
+    }
+
+    .section-Pricing {
+        padding: 2rem 1rem;
+    }
+
+}
+
+/*=============================================================================================================================
+=================================== PAGE TEMPLATES =================================================================================*/
+
+
+.sectionBannerTemplates {
+    display: flex;
+    padding: 3.5rem 2rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.25rem;
+    overflow: hidden;
+}
+
+.containerBannerTemplates {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.contenidoBannerTemplates {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    align-self: stretch;
+}
+
+.tituloBannerTemplates {
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    text-align: center;
+}
+
+.subtituloBannerTemplates {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: center;
+}
+
+.container-button-templates {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.containerImagenesBannerTemplates {
+    display: flex;
+    height: 33.3125rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.imagenesBannerTemplates {
+    display: flex;
+    height: 33.3125rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.filaImagenesBanner1 {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(6, 24.444rem);
+    margin-left: -10rem;
+    column-gap: 1rem;
+    grid-area: "imagBanner1 imagBanner2 imagBanner3 imagBanner4 imagBanner5 imagBanner6";
+}
+
+.filaImagenesBanner2 {
+    margin-left: -5rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(6, 24.444rem);
+    column-gap: 1rem;
+    grid-area: "imagBanner7 imagBanner8 imagBanner9 imagBanner10 imagBanner11 imagBanner12";
+}
+
+
+/*===================================================================
+==================SECTION HEADER TEMPLATES=====================================*/
+
+.sectionHeaderTemplates {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 2rem;
+}
+
+.headerContainerTemplates {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerContentTmplts {
+    font-size: 3.5rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+@media (max-width:576px) {
+
+    .headerContentTmplts {
+        font-size: 3rem;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+/*===================================================================
+==================SECTION FEATURES TEMPLATES=====================================*/
+
+.sectionFeaturesTemplates {
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.containerListFeatures {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+    align-self: stretch;
+}
+
+.listaFeatures {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    align-self: stretch;
+}
+
+.itemListaFeatures {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+@media (max-width:768px) {
+
+    .listaFeatures {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+/*===================================================================
+==================SECTION PLANTILLAS=====================================*/
+
+.sectionPlantillas {
+    display: flex;
+    padding: 4rem 2rem 7rem 2rem;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.containerTituloPlantillas {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    align-self: stretch;
+    text-align: center;
+}
+
+.tituloSubtituloPlantillas {
+    display: flex;
+    justify-content: center;
+}
+
+.listaPlantillas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.GridPlantillas {
+    display: grid;
+    grid-template-areas:
+    "Plantilla1 Plantilla2 Plantilla3"
+    "Plantilla4 Plantilla5 Plantilla6"
+    "Plantilla7 Plantilla8 Plantilla9";
+    column-gap: 3rem;
+    row-gap: 3rem;
+    justify-content: center;
+}
+
+.Plantilla1 {
+    padding: 0;
+    grid-area: Plantilla1;
+}
+
+.Plantilla2 {
+    padding: 0;
+    grid-area: Plantilla2;
+}
+
+.Plantilla3 {
+    padding: 0;
+    grid-area: Plantilla3;
+}
+
+.Plantilla4 {
+    padding: 0;
+    grid-area: Plantilla4;
+}
+
+.Plantilla5 {
+    padding: 0;
+    grid-area: Plantilla5;
+}
+
+.Plantilla6 {
+    padding: 0;
+    grid-area: Plantilla6;
+}
+
+.Plantilla7 {
+    padding: 0;
+    grid-area: Plantilla7;
+}
+
+.Plantilla8 {
+    padding: 0;
+    grid-area: Plantilla8;
+}
+
+.Plantilla9 {
+    padding: 0;
+    grid-area: Plantilla9;
+}
+
+.contentItemPlantillas {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.titleItemPlantillas {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+@media (max-width:768px) {
+    .GridPlantillas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+        grid-template-rows: repeat(5, auto); /* 5 filas */
+        grid-template-areas:
+            "Plantilla1 Plantilla2"
+            "Plantilla3 Plantilla4"
+            "Plantilla5 Plantilla6"
+            "Plantilla7 Plantilla8"
+            "Plantilla9 Plantilla10"; /* Repites el nombre de la última área para llenar la cuadrícula */
+    }
+}
+
+@media (max-width:576px) {
+
+    .GridPlantillas {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* 2 columnas */
+        grid-template-rows: repeat(9, auto); /* 5 filas */
+        grid-template-areas:
+        "Plantilla1"
+        "Plantilla2"
+        "Plantilla3"
+        "Plantilla4"
+        "Plantilla5"
+        "Plantilla6"
+        "Plantilla7"
+        "Plantilla8"
+        "Plantilla9";
+        column-gap: 1rem;
+        row-gap: 1rem;
+        justify-content: center;
+    }
+
+}
+
+
+/*=============================================================================================================================
+=================================== PAGE FAQ =================================================================================*/
+
+
+.sectionFaq {
+    padding: 7rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5rem;
+}
+
+.containerTitleFaq {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.containerFaq {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+.itemFaq {
+    display: flex;
+    align-items: flex-start;
+    gap: 4rem;
+    align-self: stretch;
+    padding-top: 1.5rem;
+    border-top: 0.0625rem white solid;
+}
+
+.preguntaFaq {
+    font-size: 1.3125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    width: 50%;
+}
+
+.respuestaFaq {
+    width: 50%;
+}
+
+.containerHelp {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.contentHelp {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 1rem;
+    align-self: stretch;
+}
+
+.buttonHelp {
+    background-color: #1890FF;
+    color: white;
+    font-size: 1rem;
+    padding: 0.625rem 0.9375rem;
+    border-radius: 0.625rem;
+    justify-content: center;
+    height: 3rem;
+    text-decoration: none;
+}
+
+/*=============================================================================================================================
+=================================== PAGE CONTACTO =================================================================================*/
+
+.sectionBannerContacto {
+    display: flex;
+    height: 80vh;
+    align-items: center;
+    padding: 7rem 1rem;
+}
+
+.bannerContainerContacto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    gap: 2rem;
+}
+
+.bannerContenidoContacto {
+    margin-bottom: 2.5rem;
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.subtitle-bannerContacto {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.contactoFormulario {
+    width: 60%;
+    display: flex;
+    padding: 0.25rem 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+@media (max-width:768px) {
+
+    .sectionBannerContacto {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        align-items: center;
+        padding: 3rem 1rem;
+    }
+
+    .bannerContainerContacto {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bannerContenidoContacto {
+        justify-content: center;
+        
+    }
+
+    .title-bannerContacto {
+        text-align: center;
+    }
+
+    .subtitle-bannerContacto {
+        text-align: center;
+    }
+
+    .container-button-bannerContacto {
+        text-align: center;
+    }
+
+    .container-img-bannerContacto {
+        max-width: 32rem;
+    }
+}
+
+@media (max-width:576px) {
+
+    .title-bannerContacto {
+        text-align: center;
+    }
+
+
+    .container-img-bannerContacto {
+        max-width: 25rem;
+    }
+
+}
+
+@media (max-width:425px) {
+
+    .title-bannerContacto {
+        font-size: 46px;
+    }
+
+    .subtitle-bannerContacto {
+        font-size: 28px;
+    }
+}

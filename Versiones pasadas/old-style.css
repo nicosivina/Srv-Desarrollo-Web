@@ -1,0 +1,1333 @@
+/*=============================================================================================================================
+===================================RESET HTML=================================================================================*/ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 43.5rem;
+}
+
+/*ABREVITURA PARA COMENTAR*/ 
+
+
+/*=============================================================================================================================
+===================================CONFIGURACIONES GENERALES=================================================================================*/
+
+* {
+    font-size: 2px;
+}
+
+body {
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+}
+
+main {
+    display: block;
+}
+
+h1, h2, h3, h4, p, label {
+    color: white;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+    color: white;
+    font-size: 28rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: left;
+    display: inline;
+}
+
+h2 {
+    color: white;
+    font-size: 24rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h3 {
+    color: white;
+    font-size: 20rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h4 {
+    color: white;
+    font-size: 16em;
+    font-style: normal;
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h5 {
+    color: white;
+    font-size: 12em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+p, label, a, b {
+    font-size: 9em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+
+input {
+    font-size: 8rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.button__style__large {
+    background-color: #1890FF;
+    color: white;
+    font-size: 9rem;
+    padding: 7.5rem 12.5rem;
+    border-radius: 10rem;
+    justify-content: center;
+    width: fit-content;
+    text-decoration: none;
+}
+
+.button__style__medium {
+    background-color: #1890FF;
+    color: white;
+    font-size: 7rem;
+    padding: 5rem 7.5rem;
+    border-radius: 5rem;
+    justify-content: center;
+    width: 90rem;
+    text-decoration: none;
+}
+
+.button__style__small {
+    background-color: #1890FF;
+    color: white;
+    font-size: 7rem;
+    border-radius: 2.5rem;
+    height: 15rem;
+    width: 60rem;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.button__style__medium__secondary {
+    background-color: white;
+    color: black;
+    font-size: 7rem;
+    padding: 5rem 7.5rem;
+    border-radius: 5rem;
+    justify-content: center;
+    width: 90rem;
+    text-decoration: none;
+}
+
+/*=============================================================================================================================
+===================================ESTILO NAV=================================================================================*/
+
+
+#nav {
+    padding: 5rem 5rem;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    margin-top: -50rem;
+    width: 100vw;
+    height: 57rem;
+    border-bottom: white;
+    border-style: solid;
+    border-width: 0.5rem;
+}
+
+nav article {
+    justify-content: center;
+    align-items: center;
+}
+
+nav article ul li {
+    display: inline-block;
+    margin: 15rem;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    align-items: center;
+}
+
+nav article ul li a {
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    font-size: 10rem;
+}
+
+.logoNav {
+    max-width: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*=============================================================================================================================
+===================================ESTILO MAIN=================================================================================*/
+
+
+/*=============================================================================================================================
+===================================ESTILO FOOTER =================================================================================*/
+
+#footer {
+    margin-top: auto;
+    padding: 40rem 32rem;
+    background-color: black;
+    height: 180.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40rem;
+    border-top: white;
+    border-style: solid;
+    border-width: 0.5rem;
+}
+
+.containerContenidoFooter {
+    display: flex;
+    height: 38.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16rem;
+    align-self: stretch;
+}
+
+.containerLinksFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16rem;
+}
+
+.containerSocialLinks {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 6rem;
+}
+
+.creditosFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16rem;
+    align-self: stretch;
+    padding-top: 16rem;
+    border-top: white 0.5rem solid;
+}
+
+.containerCreditos {
+    display: flex;
+    align-items: flex-start;
+    gap: 12rem;
+}
+
+
+/*=============================================================================================================================
+=================================== PAGE INDEX =================================================================================*/
+
+/*===================================================================
+======================INICIO SECTION BANNER=========================*/
+
+#sectionBanner {
+    background-color: black;
+    height: 80vh;
+    width: 100%;
+    margin-top: 50rem;
+    padding: 56rem 32rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40rem
+}
+
+.bannerContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40rem;
+    height: 100%;
+}
+
+.containerContenido {
+    width: 50%;
+}
+
+.bannerContenido {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12rem;
+    align-self: stretch;
+    margin-bottom: 12rem;
+}
+
+.BannerButton {
+    width: 100%;
+    display: flex;
+    padding-top: 8rem;
+    align-items: flex-start;
+    gap: 8rem;
+}
+
+.containerImagen {
+    width: 50%;
+}
+
+.buttonBanner {
+    background-color: #1890FF;
+    color: white;
+    padding: 7.5rem 7.5rem;
+    border-radius: 5rem;
+    justify-content: center;
+    width: 125rem;
+    text-decoration: none;
+}
+
+.linkButton {
+    color: white;
+}
+
+.imagenBanner {
+    width: 100%;
+}
+
+
+/*===================================================================
+======================FIN SECTION BANNER===========================*/
+
+/*===================================================================
+==================INICIO HEADER=====================================*/
+
+#sectionHeader {
+    background-color: black;
+    width: 100%;
+    padding: 32.5rem 32rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerContainer {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12rem;    
+}
+
+.headerContent {
+    font-size: 28rem;
+    width: 100%;
+    font-weight: 700;
+    line-height: 120%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/*===================================================================
+======================FIN HEADER====================================*/
+
+/*===================================================================
+==================INICIO SECTION PROCESO WEB=========================*/
+
+
+#sectionProcesoweb {
+    background-color: black;
+    height: fit-content;
+    width: 100%;
+    padding: 56rem 32rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40rem
+}
+
+.containerProcesoweb {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 40rem;
+    align-self: stretch;
+}
+
+.imagenContainer {
+    width: 40%;
+}
+
+.imagenProcesoweb {
+    max-width: 100%;
+}
+
+.contentProcesoweb {
+    width: 60%;
+}
+
+.ContainerPasosProcesoweb {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20rem;
+    flex: 1 0 0;
+}
+
+.PasoProcesoweb {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16rem;
+    align-self: stretch;
+}
+
+.tituloPaso {
+    margin-bottom: 5rem;
+}
+
+.numeroPaso {
+    width: 125rem;
+    font-size: 52rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+
+/*===================================================================
+==================FIN SECTION PROCESO WEB=========================*/
+
+/*===================================================================
+================INICIO SECTION PORTFOLIO=========================*/
+
+
+#sectionPortfolio {
+    background-color: black;
+    width: 100%;
+    padding: 56rem 32rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40rem
+}
+
+.tituloPortfolio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+}
+
+.contenidoPortfolio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32rem;
+}
+
+.portfolioFila {
+    width: 100%;
+    display: flex;
+    column-gap: 28rem;
+    row-gap: 32rem;
+    justify-content: center;
+
+}
+
+.containerCard1 {
+    grid-area: containerCard4;
+    height: 260rem;
+    width: 203.3205rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 0.5rem solid white;
+}
+
+.containerCard2 {
+    grid-area: containerCard4;
+    height: 260rem;
+    width: 203.3205rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 0.5rem solid white;
+}
+
+.containerCard3 {
+    grid-area: containerCard4;
+    height: 260rem;
+    width: 203.3205rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 0.5rem solid white;
+}
+
+.containerCard4 {
+    grid-area: containerCard4;
+    height: 260rem;
+    width: 203.3205rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 0.5rem solid white;
+}
+
+.tarjetaPortfolio {
+    width: 100%;
+    height: 100%;
+    padding-left: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.ContainerImagenPortfolio {
+    width: auto;
+    height: 100%;
+    display: flex;
+    height: 131.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagenPortfolio {
+    width: 100%;
+    height: 100%;
+    border: 0.5rem white solid;
+}
+
+.containerContenidoPortfolio {
+    height: 100%;
+    width: 203.3205rem;
+    display: flex;
+    padding: 12rem;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.textContenido {
+    width: 100%;
+    height: 80.797rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8rem;
+    align-self: stretch;
+}
+
+.containerBotton {
+    display: flex;
+    padding-top: 12rem;
+    align-items: flex-start;
+    gap: 4rem;
+    align-self: stretch;
+}
+
+.buttonPortfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.textoButton {
+    font-size: 8rem;
+    font-style: normal;
+    font-weight: 400;
+    height: 12rem;
+    align-content: flex-start;
+    color: #1890FF;
+}
+
+
+
+/*===================================================================
+================FIN SECTION PORTFOLIO=========================*/
+
+/*===================================================================
+================INICIO SECTION PRICING INDEX=========================*/
+
+.tarjetaPricingIndex {
+    width: 100%;
+    background: #1890FF;
+    border: 0.5rem white solid;
+    display: flex;
+    padding: 16rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16rem;
+    flex: 1 0 0;
+}
+
+.tituloTarjeta {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    gap: 16rem;
+}
+
+.tituloPrice {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 16rem;
+    border-bottom: 0.5rem white solid;
+    border-bottom: 0.5rem white solid;
+}
+
+.contentTarjeta {
+    width: 100%;
+    padding: 16rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8rem;
+    align-self: stretch;
+    border-top: 0.5rem white solid;
+    border-bottom: 0.5rem white solid;
+}
+
+.detallePricing {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8rem;
+    flex: 1 0 0;
+}
+
+.itemDetalle {
+    display: flex;
+    align-items: flex-start;
+    gap: 8rem;
+    align-self: stretch;
+}
+
+.buttonPricing {
+    width: 100%;
+    height: 24rem;
+    display: flex;
+    padding: 6rem 12rem;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    align-self: stretch;
+    font-size: 9rem;
+}
+
+/*===================================================================
+================FIN SECTION PRICING INDEX=========================*/
+
+/*===================================================================
+================INICIO SECTION FORMULARIO=========================*/
+
+#sectionFormulario {
+    background-color: black;
+    display: flex;
+    width: 100%;
+    padding: 56rem 32rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40rem;
+}
+
+.containerFormulario {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 40rem;
+    align-self: stretch;
+}
+
+.descripcionFormulario {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16rem;
+    flex: 1 0 0;
+}
+
+.formularioTitulo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8rem;
+    align-self: stretch;
+}
+
+.contactoFormulario {
+    display: flex;
+    padding: 4rem 0rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8rem;
+}
+
+.contactoEmail {
+    display: flex;
+    align-items: flex-start;
+    gap: 8rem;
+}
+
+.Formulario {
+    width: 50%;
+    max-width: 308rem;
+    min-width:100rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12rem;
+    flex: 1 0 0;
+}
+
+.inputFormulario {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4rem;
+    align-self: stretch;
+}
+
+.estiloFormulario {
+    display: flex;
+    height: 24rem;
+    max-width: 308rem;
+    min-width:100rem;
+    padding: 6rem;
+    align-items: center;
+    gap: 4rem;
+    align-self: stretch;
+}
+
+.textareaFormulario {
+    display: flex;
+    height: 78rem;
+    max-width: 308rem;
+    min-width:100rem;
+    padding: 6rem;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.buttonFormulario {
+    background-color: #1890FF;
+    color: white;
+    font-size: 8rem;
+    padding: 5rem 7.5rem;
+    border-radius: 5rem;
+    justify-content: center;
+    width: fit-content;
+    height: 24rem;
+    text-decoration: none;
+}
+
+/*=============================================================================================================================
+=================================== PAGE SERVICIOS =================================================================================*/
+
+#sectionServicio1 {
+    background-color: black;
+    height: fit-content;
+    width: 100%;
+    margin-top: 50rem;
+    padding: 56rem 32rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40rem
+}
+
+.containerServicio1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 40rem;
+    align-self: stretch;
+}
+
+.contenidoServicio1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12rem;
+}
+
+.tituloServicio1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8rem;
+    align-self: stretch;
+}
+
+.containerImagenServicios1 {
+    width: 50%;
+}
+
+.imagenServicios1 {
+    width: 100%;
+}
+
+#sectionServicio2 {
+    background-color:  #171717;
+    height: fit-content;
+    width: 100%;
+    padding: 56rem 32rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40rem
+}
+
+.containerServicio2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 40rem;
+    align-self: stretch;
+}
+
+.containerImagenServicios2 {
+    width: 50%;
+}
+
+.imagenServicios2 {
+    width: 100%;
+}
+
+.contenidoServicio2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12rem;
+    flex: 1 0 0;
+}
+
+.tituloServicio2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8rem;
+    align-self: stretch;
+}
+
+
+#sectionPricingServicio1 {
+    background-color: black;
+    height: fit-content;
+    width: 100%;
+    padding: 35rem 32rem 56rem 32rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40rem;
+}
+
+#sectionPricingServicio2 {
+    background-color: #171717;
+    height: fit-content;
+    width: 100%;
+    padding: 35rem 32rem 56rem 32rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40rem;
+}
+
+.tituloPrincing {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8rem;
+}
+
+.contenidoPricing {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 25rem;
+    align-self: stretch;
+}
+
+.listaDescripcion {
+    display: flex;
+    padding: 4rem 0rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16rem;
+    flex: 1 0 0;
+}
+
+.itemLista {
+    display: flex;
+    align-items: flex-start;
+    gap: 12rem;
+    align-self: stretch;
+}
+
+.tarjetaPricing {
+    width: 100%;
+    background: #1890FF;
+    border: 0.5rem white solid;
+    display: flex;
+    padding: 16rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16rem;
+    flex: 1 0 0;
+}
+
+.tituloTarjeta {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    gap: 16rem;
+}
+
+.tituloPrice {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 16rem;
+    border-bottom: 0.5rem white solid;
+    border-bottom: 0.5rem white solid;
+}
+
+.contentTarjeta {
+    width: 100%;
+    padding: 16rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8rem;
+    align-self: stretch;
+    border-top: 0.5rem white solid;
+    border-bottom: 0.5rem white solid;
+}
+
+.detallePricing {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8rem;
+    flex: 1 0 0;
+}
+
+.itemDetalle {
+    display: flex;
+    align-items: flex-start;
+    gap: 8rem;
+    align-self: stretch;
+}
+
+.buttonPricing {
+    width: 100%;
+    height: 24rem;
+    display: flex;
+    padding: 6rem 12rem;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    align-self: stretch;
+    font-size: 9rem;
+}
+
+
+
+/*=============================================================================================================================
+=================================== PAGE TEMPLATES =================================================================================*/
+
+#sectionBannerTemplates {
+    background-color: black;
+    width: 100%;
+    margin-top: 50rem;
+    display: flex;
+    padding: 56rem 32rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 20rem;
+    overflow: hidden;
+}
+
+.containerBannerTemplates {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20rem;   
+}
+
+.contenidoBannerTemplates {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20rem;
+    align-self: stretch;
+}
+
+.tituloBannerTemplates {
+    font-size: 28rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    text-align: center;
+}
+
+.subtituloBannerTemplates {
+    font-size: 12em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: center;
+}
+
+.containerImagenesBannerTemplates {
+    display: flex;
+    height: 266.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8rem;
+}
+
+.imagenesBannerTemplates {
+    display: flex;
+    height: 266.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8rem;
+}
+
+.filaImagenesBanner1 {
+    display: grid;
+    grid-template-columns:  repeat(4,195.555rem);
+    grid-template-rows: 1, 121rem;
+    column-gap: 8rem;
+    grid-area:
+    "imagBanner1 imagBanner2 imagBanner3 imagBanner4" ;
+}
+
+.filaImagenesBanner2 {
+    margin-left: 50rem;
+    display: grid;
+    grid-template-columns:  repeat(4,195.555rem);
+    grid-template-rows: 1, 121rem;
+    column-gap: 8rem;
+    grid-area:
+    "imagBanner5 imagBanner6 imagBanner7 imagBanner8" ;
+}
+
+
+
+#sectionFeaturesTemplates {
+    background-color: black;
+    width: 100%;
+    padding: 56rem 32rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40rem;
+}
+
+.containerFeaturesTemplates {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 40rem;
+    align-self: stretch;
+}
+
+.tituloFeaturesTemplates {
+    width: 308rem;
+    align-self: stretch;
+}
+
+.descripcionFeaturesTemplates {
+    flex: 1 0 0;
+}
+
+.containerListFeatures {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24rem;
+    align-self: stretch;
+}
+
+.listaFeatures {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16rem;
+    align-self: stretch;
+}
+
+.itemListaFeatures {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8rem;
+    flex: 1 0 0;
+}
+
+.contentList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12rem;
+    align-self: stretch;
+}
+
+#sectionPlantillas {
+    background-color: black;
+    display: flex;
+    width: 100%;
+    padding: 56rem 32rem;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40rem;
+}
+
+.containerTituloPlantillas {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8rem;
+    align-self: stretch;
+}
+
+.tituloSubtituloPlantillas {
+    display: flex;
+    justify-content: center;
+}
+
+.listaPlantillas {
+    display: flex;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32rem;
+}
+
+.filaPlantillas {
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(3,195.5545rem);
+    grid-template-rows: repeat(2, 186rem);
+    align-items: flex-start;
+    justify-content: center;
+    gap: 16rem;
+    grid-template-areas:
+    "itemPlatillas itemPlatillas itemPlatillas"
+    "itemPlatillas itemPlatillas itemPlatillas";
+}
+
+.itemPlatillas {
+    width: 195.555rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8rem;
+}
+
+.imagenPlantilla {
+    width: 195.555rem;
+    height: 121rem;
+}
+
+.contentItemPlantillas {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.titleItemPlantillas {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 0;
+}
+
+.comprarPlantillas {
+    display: flex;
+    height: 20rem;
+    width: 195.555rem;
+    background-color: #1890FF;
+    color: white;
+    font-size: 7rem;
+    padding: 5rem 7.5rem;
+    border-radius: 5rem;
+    justify-content: center;
+    text-decoration: none;
+}
+
+/*=============================================================================================================================
+=================================== PAGE FAQ =================================================================================*/
+
+#sectionFaq {
+    background-color: black;
+    width: 100%;
+    margin-top: 50rem;
+    padding: 56rem 32rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40rem;
+}
+
+.containerTitleFaq {
+    display: flex;
+    width: 384rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12rem;
+}
+
+.containerFaq {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24rem;
+    align-self: stretch;
+}
+
+.itemFaq {
+    display: flex;
+    align-items: flex-start;
+    gap: 32rem;
+    align-self: stretch;
+    padding-top: 12rem;
+    border-top: 0.5rem white solid;
+}
+
+.preguntaFaq {
+    font-size: 10.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    width: 50%;
+}
+
+.respuestaFaq {
+    width: 50%;
+}
+
+.containerHelp {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12rem;
+}
+
+.contentHelp {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 8rem;
+    align-self: stretch;
+}
+
+.buttonHelp {
+    background-color: #1890FF;
+    color: white;
+    font-size: 8rem;
+    padding: 5rem 7.5rem;
+    border-radius: 5rem;
+    justify-content: center;
+    width: fit-content;
+    height: 24rem;
+    text-decoration: none;
+}
+
+
+
+#sectionBannerContacto {
+    background-color: black;
+    height: fit-content;
+    width: 100%;
+    margin-top: 50rem;
+    padding: 56rem 32rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40rem
+}
+
+.containerBannerContacto {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 40rem;
+    align-self: stretch;
+}
+
+.contenidoContacto {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12rem;
+    flex: 1 0 0;
+}
+
+.tituloContacto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8rem;
+    align-self: stretch;
+}
+
+.containerImagenContacto {
+    width: 50%;
+}
+
+.imagenContacto {
+    width: 100%;
+}
+

@@ -1,0 +1,442 @@
+        <!--
+            1# HEADER / NAV = LA PRIMERA ETIQUETA PARA LA ESTRUCTURA DE LA NAVEGACIÓN
+            2# MAIN = TODO EL CONTENIDO (SECTIONS-ARTICLES-DIV-ASIDES)
+            3# FOOTER = TODO EL PIÉ DE PÁGINA (DERECHOS DE AUTOR-REDES-ACCESOS)
+
+            ID= LO UTILIZAMOS PARA LAS ETIQUETAS CON MAYOR PESO, YA SEAN ESTRUCUTRAS O SECCIONES:
+                        HEADER/NAV
+                        MAIN/SECTIONS
+                        FOOTER
+
+            CLASS= LAS UTILIZAMOS PARA AQUELLOS ARTICULOS CON MENOR PESO.
+
+            MAIN=
+                sections
+                        articles
+                                asides
+                                        divs
+
+            A TODA SECCIÓN NUEVA CREAMOS UN ID PARA IDENTIFICARLAS
+            Y DENTRO A CADA ARTÍCULO SU RESPECTIVA CLASE PARA LLAMARLAS.
+
+        -->
+
+
+
+<!DOCTYPE html>
+<lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--KEYWORS SEO-->
+        <meta name="Descripcion" content="abc"> <!--DESCRIPCIÓN DE LA PAGINA (SEO)-->
+        <meta name="author" content="Nico"> <!--NOMBRE DEL CREADOR DE LA PAGINA-->
+        <META name="robots" content="index">
+        <link rel="stylesheet" href="CSS/style.css"> <!--ENLACE CON CSS-->
+
+        <title>Diseño Web</title>
+        
+    </head>
+    <body>
+        <!--COMIENZO DEL NAV-->
+        <header>
+            <nav id="nav">
+                <!--Logo NAV-->
+                <article>
+                    <img src="Images/Logos/Logo.png" class="logoNav">
+                </article>
+                <!--Link NAV-->
+                <article>
+                    <ul>
+                        <li><a href="index.html">Inicio</a> <!--CONOCÉME--> </li>
+                        <li><a href="Pages/Servicios.html">Servicios</a> <!--SERVICIOS--></li>
+                        <li><a href="Pages/Templates.html">Templates</a> <!--TESTIMONIALES--></li>
+                        <li><a href="Pages/FAQ.html">FAQ</a> <!--FORMULARIO--></li>
+                        <li><a href="Pages/Contacto.html">Contacto</a> <!--FORMULARIO--></li>     
+                    </ul>
+                </article>        
+            </nav>
+        </header>
+        <!--Fin del NAV-->
+        <main>
+        <!--=====================COMIENZO BANNER==============================================================================================-->
+        <!--==================================================================================================================================-->
+            <section id="sectionBanner">
+                <article class="bannerContainer">
+                    <div class="containerContenido container-fluid">
+                        <div class="bannerContenido container-fluid">
+                            <h1 class="alingBannerText">Desata el potencial<br>de tu marca en línea</h1>
+                            <h4 class="alingBannerText">Tu marca, tu historia, tu sitio web</h4>
+                        </div>
+                        <div class="BannerButton container-fluid">
+                            <button class="buttonBanner">
+                            <a href="#sectionPricingServicio1" class="linkButton">Comenzar ahora</a>    
+                            </button>
+                        </div>
+                    </div>
+                    <div class="containerImagen container-fluid">
+                        <img src="Images/Index/Imagen-banner.png" alt="imagen_banner" class="imagenBanner">
+                    </div>
+                </article> 
+            </section>
+        <!--FIN BANNER-->
+        <!--INICIO HEADER-->
+            <section id="sectionHeader">
+                <article class="headerContainer">
+                    <p class="headerContent">
+                        Expande tu negocio online con un diseño web único
+                    </p>
+                </article>
+            </section>
+        <!--FIN HEADER-->
+        
+        <!--INICIO FEATURES-->
+            <section id="sectionProcesoweb">
+                <article class="containerProcesoweb">
+                    <div class="imagenContainer">
+                        <img src="images/Index/Mockup_procesoweb.png" alt="proceso_web" class="imagenProcesoweb"> 
+                    </div>
+                    <div class="contentProcesoweb">
+                        <ol class="ContainerPasosProcesoweb">
+                            <!--STEP 1-->
+                            <li class="PasoProcesoweb">
+                                <p class="numeroPaso">
+                                    1
+                                </p>
+                                <div>
+                                    <h4 class="tituloPaso">
+                                        Diseño Personalizado
+                                    </h4>
+                                    <p>
+                                        Creamos un diseño web único que se adapta a la identidad de tu negocio, convirtiendo tu sitio en una expresión digital auténtica de tu marca.
+                                    </p>
+                                </div>
+                            </li>
+                            <!--STEP 2-->
+                            <li class="PasoProcesoweb">
+                                <p class="numeroPaso">
+                                    2
+                                </p>
+                                <div>
+                                    <h4 class="tituloPaso">
+                                        Desarrollo Avanzado
+                                    </h4>
+                                    <p>
+                                        Implementamos características avanzadas para garantizar una funcionalidad excepcional, proporcionando a tus visitantes una experiencia fluida e intuitiva.
+                                    </p>
+                                </div>
+                            </li>
+                            <!--STEP 3-->
+                            <li class="PasoProcesoweb">
+                                <p class="numeroPaso">
+                                    3
+                                </p>
+                                <div>
+                                    <h4 class="tituloPaso">
+                                        Optimización Total
+                                    </h4>
+                                    <p>
+                                        Nos aseguramos de que tu sitio sea optimizado para dispositivos móviles y cargue rápidamente, ofreciendo una experiencia sin problemas en cualquier plataforma.
+                                    </p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </article>
+            </section>
+            <!--FIN PROCESO WEB-->
+            
+            <!--INICIO PORTFOLIO-->
+            <section id="sectionPortfolio">
+                <article class="tituloPortfolio">
+                    <h2>Historias de éxito digital</h2>
+                    <p> Explora nuestra cartera de proyectos que han llevado a empresas como la tuya al siguiente nivel en el mundo digital.
+                    </p>
+                </article>
+                <article class="contenidoPortfolio">
+                    <div class="portfolioFila">
+                        <!--Portfolio FIGMA-->
+                        <div class="containerCard1">
+                            <div class="tarjetaPortfolio">
+                                <div class="ContainerImagenPortfolio">
+                                    <img src="../Images/Portfolio/figma.png" alt="Portofolio_figma" class="imagenPortfolio">
+                                </div>
+                                <div class="containerContenidoPortfolio">
+                                    <div class="textContenido">
+                                        <div class="clientePortfolio">
+                                            <h5>Figma</h5>
+                                        </div>    
+                                        <div>
+                                            <p>Desde el lanzamiento exitoso hasta proporcionar herramientas de administración, hemos sido el arquitecto digital de Figma.</p>
+                                        </div>
+                                    </div>
+                                    <div class="containerBotton">
+                                        <div class="buttonPortfolio">
+                                                <a href="https://www.figma.com/" class="textoButton" target="_blank">Ver página web</a>
+                                                <img src="../Iconos/Chevron Right.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>      
+                        </div>
+
+                        <div class="containerCard2">
+                            <div class="tarjetaPortfolio">
+                                <div class="ContainerImagenPortfolio">
+                                    <img src="../Images/Portfolio/figma.png" alt="Portofolio_figma" class="imagenPortfolio">
+                                </div>
+                                <div class="containerContenidoPortfolio">
+                                    <div class="textContenido">
+                                        <div class="clientePortfolio">
+                                            <h5>Figma</h5>
+                                        </div>    
+                                        <div>
+                                            <p>Desde el lanzamiento exitoso hasta proporcionar herramientas de administración, hemos sido el arquitecto digital de Figma.</p>
+                                        </div>
+                                    </div>
+                                    <div class="containerBotton">
+                                        <div class="buttonPortfolio">
+                                                <a href="https://www.figma.com/" class="textoButton" target="_blank">Ver página web</a>
+                                                <img src="../Iconos/Chevron Right.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>      
+                        </div>
+                    </div>
+                    <div class="portfolioFila">    
+                        <!--Portfolio ADOBE-->
+                        <div class="containerCard3">
+                            <div class="tarjetaPortfolio">
+                                <div class="ContainerImagenPortfolio">
+                                    <img src="../Images/Portfolio/adobe.png" alt="Portofolio_figma" class="imagenPortfolio">
+                                </div>
+                                <div class="containerContenidoPortfolio">
+                                    <div class="textContenido">
+                                        <div class="clientePortfolio">
+                                            <h5>Adobe</h5>
+                                        </div>    
+                                        <div>
+                                            <p>Descubre cómo transformamos la presencia web de Adobe, ofreciéndoles una plataforma que destaca en creatividad y funcionalidad.</p>
+                                        </div>
+                                    </div>
+                                    <div class="containerBotton">
+                                        <div class="buttonPortfolio">
+                                                <a href="https://www.adobe.com/ar/"  class="textoButton" target="_blank">Ver página web</a>
+                                                <img src="../Iconos/Chevron Right.png" alt="">
+                                        </div>
+                                    </div>
+                                </didiv
+                            </div>      
+                        </div>
+                        <!--Portfolio CODERHOUSE-->
+                        <div class="containerCard4">
+                            <div class="tarjetaPortfolio">
+                                <div class="ContainerImagenPortfolio">
+                                    <img src="../Images/Portfolio/coderhouse.png" alt="Portofolio_figma" class="imagenPortfolio">
+                                </div>
+                                <div class="containerContenidoPortfolio">
+                                    <div class="textContenido">
+                                        <div class="clientePortfolio">
+                                            <h5>Coderhouse</h5>
+                                        </div>    
+                                        <div>
+                                            <p>Hemos impulsado el éxito online de Coderhouse con un diseño web personalizado y herramientas esenciales para el éxito continuo.</p>
+                                        </div>
+                                    </div>
+                                    <div class="containerBotton">
+                                        <div class="buttonPortfolio">
+                                                <a href="https://www.coderhouse.com/" class="textoButton" target="_blank">Ver página web</a>
+                                                <img src="../Iconos/Chevron Right.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>      
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <!--FIN PORTFOLIO-->
+            <!--INICIO PRICING-->
+                <section id="sectionPricingServicio1">
+                    <article class="tituloPrincing">
+                        <h2>Planes para tu Presencia Digital</h2>
+                        <p>Transforma tu presencia digital con nuestros servicios de Diseño y Desarrollo Web.</p>
+                    </article>
+                    <!--PRICING-->
+                    <article class="contenidoPricing">
+                        <div class="tarjetaPricingIndex">
+                            <div class="tituloTarjeta">
+                                <h5 class="tituloPrice">
+                                    Diseño y Desarrollo Web desde cero
+                                </h5>
+                                <h2>
+                                    $299.99
+                                </h2>
+                            </div>
+                            <div class="contentTarjeta">
+                                <p>
+                                    Incluye:
+                                </p>
+                                <ol class="detallePricing">
+                                    <li class="itemDetalle">
+                                        <img src="../Iconos/Check.png" alt="">
+                                        <p>
+                                            Diseño web personalizado que refleje la identidad de tu marca.</p></li>
+                                    <li class="itemDetalle">
+                                        <img src="../Iconos/Check.png" alt="">
+                                        <p>
+                                            Desarrollo de funcionalidades avanzadas.</p></li>
+                                    <li class="itemDetalle">
+                                        <img src="../Iconos/Check.png" alt="">
+                                        <p>
+                                            Optimización para dispositivos móviles y velocidad de carga rápida.</p></li>
+                                    <li class="itemDetalle">
+                                        <img src="../Iconos/Check.png" alt="">
+                                        <p>
+                                            Mejora del SEO para una mejor visibilidad en línea.</p></li>
+                                    <li class="itemDetalle">
+                                        <img src="../Iconos/Check.png" alt="">
+                                        <p>
+                                            Soporte integral y asesoramiento durante todo el proceso de creación.
+                                        </p>
+                                    </li>
+                                    <li class="itemDetalle">
+                                        <img src="../Iconos/Check.png" alt="">
+                                        <p>
+                                            Implementación completa, incluyendo la apertura de un dominio y registro.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </div>
+                            <button class="buttonPricing">Comienza ahora</button>
+                            
+                        </div>
+                        <div class="tarjetaPricingIndex">
+                            <div class="tituloTarjeta">
+                                <h5 class="tituloPrice">
+                                    Rediseño y Desarrollo Web
+                                </h5>
+                                <h2>
+                                    $199.99
+                                </h2>
+                            </div>
+                            <div class="contentTarjeta">
+                                <p>
+                                    Incluye:
+                                </p>
+                                <ol class="detallePricing">
+                                    <li class="itemDetalle">
+                                        <img src="../Iconos/Check.png" alt="">
+                                        <p>
+                                            Rediseño de tu sitio web que refleje la identidad de tu marca..</p></li>
+                                    <li class="itemDetalle">
+                                        <img src="../Iconos/Check.png" alt="">
+                                        <p>
+                                            Desarrollo de funcionalidades avanzadas.</p></li>
+                                    <li class="itemDetalle">
+                                        <img src="../Iconos/Check.png" alt="">
+                                        <p>
+                                            Optimización para dispositivos móviles y velocidad de carga rápida.</p></li>
+                                    <li class="itemDetalle">
+                                        <img src="../Iconos/Check.png" alt="">
+                                        <p>
+                                            Mejora del SEO para una mejor visibilidad en línea.</p></li>
+                                    <li class="itemDetalle">
+                                        <img src="../Iconos/Check.png" alt="">
+                                        <p>
+                                            Soporte integral y asesoramiento durante todo el proceso de creación.</p></li>
+                                </ol>
+                            </div>
+                            <button class="buttonPricing">Comienza ahora</button> 
+                        </div>
+                    </article>
+                </section>
+                <!--INICIO FORMULARIO-->
+                <section id="sectionFormulario">
+                    <article class="containerFormulario">
+                        <div class="descripcionFormulario">
+                            <div class="formularioTitulo">
+                                <h3>Contáctanos</h3>
+                                <p>
+                                    Estamos aquí para responder a tus preguntas, discutir tus necesidades y ayudarte a llevar tu presencia en línea al siguiente nivel.<br><br>Ponte en contacto con nosotros hoy mismo para comenzar.
+                                </p>
+                            </div>
+                            <div class="contactoFormulario">
+                                <div class="contactoEmail">
+                                    <img src="Iconos/Email.png" alt="">
+                                    <p>
+                                        tuempresa@email.com
+                                    </p>
+                                </div>
+                                <div class="contactoEmail">
+                                    <img src="Iconos/Phone.png" alt="">
+                                    <p>
+                                        +54 9 1122334400
+                                    </p>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                        <form class="Formulario">
+                            <label for="Nombre" class="inputFormulario">
+                                Nombre:
+                                <input type="text" name="Nombre" class="estiloFormulario">
+                            </label>
+                            <label for="Apellido" class="inputFormulario">
+                                Apellido:
+                                <input type="text" name="Apellido" class="estiloFormulario">
+                            </label>
+                            <label for="Correo" class="inputFormulario">
+                                Correo:
+                                <input type="email" name="Correo" class="estiloFormulario">
+                            </label>
+                            <label for="Mensaje" class="inputFormulario">
+                                Mensaje:
+                                <textarea name="Mensaje" class="textareaFormulario"></textarea>
+                            </label>
+                            <input type="submit" value="Enviar" class="buttonFormulario">
+                    </article>
+                </section>
+                <!--FIN FORMULARIO-->
+        </main>
+        </body>
+        <footer id="footer">
+            <article class="containerContenidoFooter">
+                <div class="containerLogoFooter">
+                    <!--LOGO FOOTER-->
+                    <img src="Images/Logos/Logo_pequeno.png" alt="logo_footer" width="150">
+                </div>
+                <div class="containerLinksFooter">
+                    <ul class="containerLinksFooter">
+                        <li><a href="index.html">Inicio</a> <!--CONOCÉME--> </li>
+                        <li><a href="Pages/Servicios.html">Servicios</a> <!--SERVICIOS--></li>
+                        <li><a href="Pages/Templates.html">Templates</a> <!--TESTIMONIALES--></li>
+                        <li><a href="Pages/FAQ.html">FAQ</a> <!--FORMULARIO--></li>
+                        <li><a href="Pages/Contacto.html">Contacto</a> <!--FORMULARIO--></li>     
+                    </ul>
+                </div>
+                <div class="containerSocialLinks">
+                    <img src="Iconos/Facebook.png" alt="">
+                    <img src="Iconos/Instagram.png" alt="">
+                    <img src="Iconos/LinkedIn.png" alt="">
+                </div>
+            </article>
+            <article class="creditosFooter">
+                <ul class="containerCreditos">
+                    <li>
+                        <p>2023 Nicolas Sivina. All right reserved.</p>
+                    </li>
+                    <li>
+                        <a href="">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="">Terms of Service</a>
+                    </li>
+                    <li>
+                        <a href="">Cookies Settings</a>
+                    </li>   
+                </ul>
+            </article> 
+        </footer>
+</html>    
