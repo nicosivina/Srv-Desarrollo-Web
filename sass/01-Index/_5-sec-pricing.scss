@@ -1,0 +1,133 @@
+
+/*===================================================================
+================INICIO SECTION PRICING INDEX=========================*/
+
+#pricing {
+    padding: 5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+
+    .pricing-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 0.5rem;
+    }
+
+    .pricing-content {
+        display: flex;
+        align-items: center;
+        gap: 3.125rem;
+        align-self: stretch;
+
+        .pricing-content-card {
+            background: #1890FF;
+            border: 0.0625rem white solid;
+            border-radius: var(--bs-border-radius);
+            display: flex;
+            padding: 2rem;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 2rem;
+
+            .pricing-card-title {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 1rem;
+
+                .card-price {
+                    font-size: 3.5rem;
+                    margin: 0px;
+                }
+            }
+
+            .card-content {
+                padding: 1rem 0rem 2rem;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+                align-self: stretch;
+                border-top: 0.0625rem white solid;
+                border-bottom: 0.0625rem white solid;
+
+                .card-content-list {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 1rem;
+                    margin: 0px;
+
+                    .card-item {
+                        display: flex;
+                        align-items: flex-start;
+                        gap: 1rem;
+                        align-self: stretch;
+
+                        .item-text {
+                            margin: 0px;
+                        }
+                    }
+                }
+            }
+            
+            .pricing-button {
+                width: 100%;
+                height: 3rem;
+                border-radius: var(--bs-border-radius);
+                display: flex;
+                padding: 0.75rem 1.5rem;
+                justify-content: center;
+                align-items: center;
+                gap: 0.25rem;
+                align-self: stretch;
+                font-size: 1.125rem;
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+
+    #pricing {
+    padding: 3rem 2rem;
+
+        .pricing-content {
+        display: flex;
+        flex-direction: column;
+        }
+    }
+}
+
+@media (max-width:576px) {
+
+    #pricing  {
+        padding: 3rem 1rem;
+
+        .pricing-content {
+            padding-left: 0;
+            padding-right: 0;
+
+            .card-content-list {
+                padding: 0;
+            }
+        }
+    }
+}
+
+@media (max-width:425px) {
+
+    .pricing-content {
+        padding-left: 0;
+        padding-right: 0;
+
+        .card-content-list {
+            padding: 0;
+        }
+    }
+}

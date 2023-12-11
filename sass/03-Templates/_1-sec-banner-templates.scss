@@ -1,0 +1,100 @@
+/*=============================================================================================================================
+=================================== PAGE TEMPLATES =================================================================================*/
+
+
+.sec-banner-tmplts {
+    display: flex;
+    padding: 5rem 3rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.25rem;
+    overflow: hidden;
+
+    .sec-banner-tmplts-container-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.25rem;
+
+        .tmplts-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            align-self: stretch;
+
+            .tmplts-title {
+                font-size: 3.5rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 120%;
+                text-align: center;
+            }
+            
+            .tmplts-subtitle {
+                font-size: 1.5rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+                text-align: center;
+            }
+        }
+
+        
+        .tmplts-container-button {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+    }
+
+    .sec-banner-tmplts-img {
+        display: flex;
+        height: 33.3125rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+
+        .container-img {
+            display: flex;
+            height: 33.3125rem;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+
+            .img-row-1 {
+                display: grid;
+                justify-content: center;
+                grid-template-columns: repeat(6, 24.444rem);
+                margin-left: -10rem;
+                column-gap: 1rem;
+                grid-area: "imagBanner1 imagBanner2 imagBanner3 imagBanner4 imagBanner5 imagBanner6";
+            }
+            
+            .img-row-2 {
+                margin-left: -5rem;
+                display: grid;
+                justify-content: center;
+                grid-template-columns: repeat(6, 24.444rem);
+                column-gap: 1rem;
+                grid-area: "imagBanner7 imagBanner8 imagBanner9 imagBanner10 imagBanner11 imagBanner12";
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

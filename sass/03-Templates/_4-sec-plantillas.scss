@@ -1,0 +1,228 @@
+/*===================================================================
+==================SECTION PLANTILLAS=====================================*/
+
+.sec-plantillas {
+    display: flex;
+    padding: 4rem 3rem 7rem 3rem;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2.5rem;
+
+    .sec-plantillas-title-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        align-self: stretch;
+        text-align: center;
+
+        .subtitle-plantillas {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .grid-plantillas {
+        display: grid;
+        grid-template-areas:
+        "Plantilla1 Plantilla2 Plantilla3"
+        "Plantilla4 Plantilla5 Plantilla6"
+        "Plantilla7 Plantilla8 Plantilla9";
+        column-gap: 3rem;
+        row-gap: 3rem;
+        justify-content: center;
+
+        .container-fluid {
+            padding: 0;
+
+            .Plantilla1 {
+                padding: 0;
+                grid-area: Plantilla1;
+
+                .contentItemPlantillas {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                
+                    .titleItemPlantillas {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
+                }            
+            }
+            
+            .Plantilla2 {
+                padding: 0;
+                grid-area: Plantilla2;
+
+                .contentItemPlantillas {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                
+                    .titleItemPlantillas {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
+                }
+            }
+            
+            .Plantilla3 {
+                padding: 0;
+                grid-area: Plantilla3;
+
+                .contentItemPlantillas {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                
+                    .titleItemPlantillas {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
+                }
+            }
+            
+            .Plantilla4 {
+                padding: 0;
+                grid-area: Plantilla4;
+
+                .contentItemPlantillas {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                
+                    .titleItemPlantillas {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
+                }
+            }
+            
+            .Plantilla5 {
+                padding: 0;
+                grid-area: Plantilla5;
+
+                .contentItemPlantillas {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                
+                    .titleItemPlantillas {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
+                }
+            }
+            
+            .Plantilla6 {
+                padding: 0;
+                grid-area: Plantilla6;
+
+                .contentItemPlantillas {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                
+                    .titleItemPlantillas {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
+                }
+            }
+            
+            .Plantilla7 {
+                padding: 0;
+                grid-area: Plantilla7;
+
+                .contentItemPlantillas {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                
+                    .titleItemPlantillas {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
+                }
+            }
+            
+            .Plantilla8 {
+                padding: 0;
+                grid-area: Plantilla8;
+
+                .contentItemPlantillas {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                
+                    .titleItemPlantillas {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
+                }
+            }
+            
+            .Plantilla9 {
+                padding: 0;
+                grid-area: Plantilla9;
+
+                .contentItemPlantillas {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                
+                    .titleItemPlantillas {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+
+    .sec-plantillas .grid-plantillas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+        grid-template-rows: repeat(5, auto); /* 5 filas */
+        grid-template-areas:
+            "Plantilla1 Plantilla2"
+            "Plantilla3 Plantilla4"
+            "Plantilla5 Plantilla6"
+            "Plantilla7 Plantilla8"
+            "Plantilla9 Plantilla10"; /* Repites el nombre de la última área para llenar la cuadrícula */
+    }
+}
+
+@media (max-width:576px) {
+
+    .sec-plantillas .grid-plantillas {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* 2 columnas */
+        grid-template-rows: repeat(9, auto); /* 5 filas */
+        grid-template-areas:
+        "Plantilla1"
+        "Plantilla2"
+        "Plantilla3"
+        "Plantilla4"
+        "Plantilla5"
+        "Plantilla6"
+        "Plantilla7"
+        "Plantilla8"
+        "Plantilla9";
+        column-gap: 1rem;
+        row-gap: 3rem;
+        justify-content: center;
+    }
+}

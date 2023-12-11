@@ -1,0 +1,115 @@
+/*===================================================================
+==================FEATURES=========================*/
+
+
+.sec-features {
+    padding: 5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+
+    .sec-features-container {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+
+        .sec-features-container-img {
+            padding: 0;
+            width: 40%;
+        }
+
+        .sec-features-container-content {
+            padding: 0;
+            width: 60%;
+
+            .content-steps {
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 2rem;
+
+                .content-steps-item {
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start;
+                    gap: 2rem;
+
+                    .step-number {
+                        width: 15.625rem;
+                        font-size: 6.5rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-start;
+                        align-content: flex-start;
+                    }
+
+                    .step-content {
+                        padding-top: 1rem;
+                        max-width: 100%;
+
+                        .step-title {
+                            max-width: 100%;
+                            margin-bottom: 0.625rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+
+    .sec-features {
+        padding: 3rem 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+
+        .sec-features-container {
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+
+            .sec-features-container-img {
+                width: 80%;
+            }
+        
+            .sec-features-container-content {
+                width: 100%;
+                display: flex;
+            }
+        }
+    }
+}
+
+@media (max-width:425px) {
+
+    .sec-features {
+        padding: 3rem 1rem;
+
+        .sec-features-container {
+        gap: 4rem;
+
+            .sec-features-container-content {
+                padding: 0;
+
+                .content-steps {
+                    padding: 0;
+
+                    .content-steps-item {
+                        gap: 2rem;
+
+                        .step-content {
+                            padding-top: 1.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

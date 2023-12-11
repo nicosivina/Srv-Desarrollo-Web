@@ -748,6 +748,326 @@ body {
 }
 /*=============================================================================================================================
 =================================== PAGE SERVICIOS =================================================================================*/
+/*=============================================================================================================================
+=================================== PAGE TEMPLATES =================================================================================*/
+/*=============================================================================================================================
+=================================== PAGE TEMPLATES =================================================================================*/
+.sec-banner-tmplts {
+  display: flex;
+  padding: 5rem 3rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.25rem;
+  overflow: hidden;
+}
+.sec-banner-tmplts .sec-banner-tmplts-container-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+.sec-banner-tmplts .sec-banner-tmplts-container-content .tmplts-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  align-self: stretch;
+}
+.sec-banner-tmplts .sec-banner-tmplts-container-content .tmplts-content .tmplts-title {
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  text-align: center;
+}
+.sec-banner-tmplts .sec-banner-tmplts-container-content .tmplts-content .tmplts-subtitle {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  text-align: center;
+}
+.sec-banner-tmplts .sec-banner-tmplts-container-content .tmplts-container-button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.sec-banner-tmplts .sec-banner-tmplts-img {
+  display: flex;
+  height: 33.3125rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.sec-banner-tmplts .sec-banner-tmplts-img .container-img {
+  display: flex;
+  height: 33.3125rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.sec-banner-tmplts .sec-banner-tmplts-img .container-img .img-row-1 {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(6, 24.444rem);
+  margin-left: -10rem;
+  column-gap: 1rem;
+  grid-area: "imagBanner1 imagBanner2 imagBanner3 imagBanner4 imagBanner5 imagBanner6";
+}
+.sec-banner-tmplts .sec-banner-tmplts-img .container-img .img-row-2 {
+  margin-left: -5rem;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(6, 24.444rem);
+  column-gap: 1rem;
+  grid-area: "imagBanner7 imagBanner8 imagBanner9 imagBanner10 imagBanner11 imagBanner12";
+}
+
+/*===================================================================
+==================SECTION HEADER TEMPLATES=====================================*/
+.sec-header-tmplts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 3rem;
+}
+.sec-header-tmplts .sec-header-tmplts-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sec-header-tmplts .sec-header-tmplts-container .sec-header-tmplts-container-content {
+  font-size: 3.5rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  .sec-header-tmplts .sec-header-tmplts-container .sec-header-tmplts-container-content {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
+/*===================================================================
+==================SECTION FEATURES TEMPLATES=====================================*/
+.sec-features-tmplts {
+  padding: 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+.sec-features-tmplts .sec-features-tmplts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3rem;
+  align-self: stretch;
+}
+.sec-features-tmplts .sec-features-tmplts-container .list-features {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  align-self: stretch;
+}
+.sec-features-tmplts .sec-features-tmplts-container .list-features .list-features-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .sec-features-tmplts .sec-features-tmplts-container .list-features {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/*===================================================================
+==================SECTION PLANTILLAS=====================================*/
+.sec-plantillas {
+  display: flex;
+  padding: 4rem 3rem 7rem 3rem;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.sec-plantillas .sec-plantillas-title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  align-self: stretch;
+  text-align: center;
+}
+.sec-plantillas .sec-plantillas-title-container .subtitle-plantillas {
+  display: flex;
+  justify-content: center;
+}
+.sec-plantillas .grid-plantillas {
+  display: grid;
+  grid-template-areas: "Plantilla1 Plantilla2 Plantilla3" "Plantilla4 Plantilla5 Plantilla6" "Plantilla7 Plantilla8 Plantilla9";
+  column-gap: 3rem;
+  row-gap: 3rem;
+  justify-content: center;
+}
+.sec-plantillas .grid-plantillas .container-fluid {
+  padding: 0;
+}
+.sec-plantillas .grid-plantillas .container-fluid .Plantilla1 {
+  padding: 0;
+  grid-area: Plantilla1;
+}
+.sec-plantillas .grid-plantillas .container-fluid .Plantilla1 .contentItemPlantillas {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.sec-plantillas .grid-plantillas .container-fluid .Plantilla1 .contentItemPlantillas .titleItemPlantillas {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.sec-plantillas .grid-plantillas .container-fluid .Plantilla2 {
+  padding: 0;
+  grid-area: Plantilla2;
+}
+.sec-plantillas .grid-plantillas .container-fluid .Plantilla2 .contentItemPlantillas {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.sec-plantillas .grid-plantillas .container-fluid .Plantilla2 .contentItemPlantillas .titleItemPlantillas {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.sec-plantillas .grid-plantillas .container-fluid .Plantilla3 {
+  padding: 0;
+  grid-area: Plantilla3;
+}
+.sec-plantillas .grid-plantillas .container-fluid .Plantilla3 .contentItemPlantillas {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.sec-plantillas .grid-plantillas .container-fluid .Plantilla3 .contentItemPlantillas .titleItemPlantillas {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.sec-plantillas .grid-plantillas .container-fluid .Plantilla4 {
+  padding: 0;
+  grid-area: Plantilla4;
+}
+.sec-plantillas .grid-plantillas .container-fluid .Plantilla4 .contentItemPlantillas {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.sec-plantillas .grid-plantillas .container-fluid .Plantilla4 .contentItemPlantillas .titleItemPlantillas {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.sec-plantillas .grid-plantillas .container-fluid .Plantilla5 {
+  padding: 0;
+  grid-area: Plantilla5;
+}
+.sec-plantillas .grid-plantillas .container-fluid .Plantilla5 .contentItemPlantillas {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.sec-plantillas .grid-plantillas .container-fluid .Plantilla5 .contentItemPlantillas .titleItemPlantillas {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.sec-plantillas .grid-plantillas .container-fluid .Plantilla6 {
+  padding: 0;
+  grid-area: Plantilla6;
+}
+.sec-plantillas .grid-plantillas .container-fluid .Plantilla6 .contentItemPlantillas {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.sec-plantillas .grid-plantillas .container-fluid .Plantilla6 .contentItemPlantillas .titleItemPlantillas {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.sec-plantillas .grid-plantillas .container-fluid .Plantilla7 {
+  padding: 0;
+  grid-area: Plantilla7;
+}
+.sec-plantillas .grid-plantillas .container-fluid .Plantilla7 .contentItemPlantillas {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.sec-plantillas .grid-plantillas .container-fluid .Plantilla7 .contentItemPlantillas .titleItemPlantillas {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.sec-plantillas .grid-plantillas .container-fluid .Plantilla8 {
+  padding: 0;
+  grid-area: Plantilla8;
+}
+.sec-plantillas .grid-plantillas .container-fluid .Plantilla8 .contentItemPlantillas {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.sec-plantillas .grid-plantillas .container-fluid .Plantilla8 .contentItemPlantillas .titleItemPlantillas {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.sec-plantillas .grid-plantillas .container-fluid .Plantilla9 {
+  padding: 0;
+  grid-area: Plantilla9;
+}
+.sec-plantillas .grid-plantillas .container-fluid .Plantilla9 .contentItemPlantillas {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.sec-plantillas .grid-plantillas .container-fluid .Plantilla9 .contentItemPlantillas .titleItemPlantillas {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+  .sec-plantillas .grid-plantillas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    grid-template-rows: repeat(5, auto); /* 5 filas */
+    grid-template-areas: "Plantilla1 Plantilla2" "Plantilla3 Plantilla4" "Plantilla5 Plantilla6" "Plantilla7 Plantilla8" "Plantilla9 Plantilla10"; /* Repites el nombre de la última área para llenar la cuadrícula */
+  }
+}
+@media (max-width: 576px) {
+  .sec-plantillas .grid-plantillas {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* 2 columnas */
+    grid-template-rows: repeat(9, auto); /* 5 filas */
+    grid-template-areas: "Plantilla1" "Plantilla2" "Plantilla3" "Plantilla4" "Plantilla5" "Plantilla6" "Plantilla7" "Plantilla8" "Plantilla9";
+    column-gap: 1rem;
+    row-gap: 3rem;
+    justify-content: center;
+  }
+}
 .sectionBanner-Srv1 {
   display: flex;
   height: 80vh;
@@ -886,277 +1206,6 @@ body {
   }
   .section-Pricing {
     padding: 2rem 1rem;
-  }
-}
-/*=============================================================================================================================
-=================================== PAGE TEMPLATES =================================================================================*/
-.sectionBannerTemplates {
-  display: flex;
-  padding: 3.5rem 2rem;
-  flex-direction: column;
-  align-items: center;
-  gap: 2.25rem;
-  overflow: hidden;
-}
-
-.containerBannerTemplates {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.25rem;
-}
-
-.contenidoBannerTemplates {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  align-self: stretch;
-}
-
-.tituloBannerTemplates {
-  font-size: 3.5rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 120%;
-  text-align: center;
-}
-
-.subtituloBannerTemplates {
-  font-size: 1.5rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-  text-align: center;
-}
-
-.container-button-templates {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-}
-
-.containerImagenesBannerTemplates {
-  display: flex;
-  height: 33.3125rem;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1rem;
-}
-
-.imagenesBannerTemplates {
-  display: flex;
-  height: 33.3125rem;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1rem;
-}
-
-.filaImagenesBanner1 {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(6, 24.444rem);
-  margin-left: -10rem;
-  column-gap: 1rem;
-  grid-area: "imagBanner1 imagBanner2 imagBanner3 imagBanner4 imagBanner5 imagBanner6";
-}
-
-.filaImagenesBanner2 {
-  margin-left: -5rem;
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(6, 24.444rem);
-  column-gap: 1rem;
-  grid-area: "imagBanner7 imagBanner8 imagBanner9 imagBanner10 imagBanner11 imagBanner12";
-}
-
-/*===================================================================
-==================SECTION HEADER TEMPLATES=====================================*/
-.sectionHeaderTemplates {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 3rem 2rem;
-}
-
-.headerContainerTemplates {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.headerContentTmplts {
-  font-size: 3.5rem;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
-@media (max-width: 576px) {
-  .headerContentTmplts {
-    font-size: 3rem;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
-}
-/*===================================================================
-==================SECTION FEATURES TEMPLATES=====================================*/
-.sectionFeaturesTemplates {
-  padding: 4rem 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2.5rem;
-}
-
-.containerListFeatures {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 3rem;
-  align-self: stretch;
-}
-
-.listaFeatures {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 2rem;
-  align-self: stretch;
-}
-
-.itemListaFeatures {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1rem;
-}
-
-@media (max-width: 768px) {
-  .listaFeatures {
-    display: flex;
-    flex-direction: column;
-  }
-}
-/*===================================================================
-==================SECTION PLANTILLAS=====================================*/
-.sectionPlantillas {
-  display: flex;
-  padding: 4rem 2rem 7rem 2rem;
-  justify-content: center;
-  flex-direction: column;
-  gap: 2.5rem;
-}
-
-.containerTituloPlantillas {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-  align-self: stretch;
-  text-align: center;
-}
-
-.tituloSubtituloPlantillas {
-  display: flex;
-  justify-content: center;
-}
-
-.listaPlantillas {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 1rem;
-}
-
-.GridPlantillas {
-  display: grid;
-  grid-template-areas: "Plantilla1 Plantilla2 Plantilla3" "Plantilla4 Plantilla5 Plantilla6" "Plantilla7 Plantilla8 Plantilla9";
-  column-gap: 3rem;
-  row-gap: 3rem;
-  justify-content: center;
-}
-
-.Plantilla1 {
-  padding: 0;
-  grid-area: Plantilla1;
-}
-
-.Plantilla2 {
-  padding: 0;
-  grid-area: Plantilla2;
-}
-
-.Plantilla3 {
-  padding: 0;
-  grid-area: Plantilla3;
-}
-
-.Plantilla4 {
-  padding: 0;
-  grid-area: Plantilla4;
-}
-
-.Plantilla5 {
-  padding: 0;
-  grid-area: Plantilla5;
-}
-
-.Plantilla6 {
-  padding: 0;
-  grid-area: Plantilla6;
-}
-
-.Plantilla7 {
-  padding: 0;
-  grid-area: Plantilla7;
-}
-
-.Plantilla8 {
-  padding: 0;
-  grid-area: Plantilla8;
-}
-
-.Plantilla9 {
-  padding: 0;
-  grid-area: Plantilla9;
-}
-
-.contentItemPlantillas {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-
-.titleItemPlantillas {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-@media (max-width: 768px) {
-  .GridPlantillas {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
-    grid-template-rows: repeat(5, auto); /* 5 filas */
-    grid-template-areas: "Plantilla1 Plantilla2" "Plantilla3 Plantilla4" "Plantilla5 Plantilla6" "Plantilla7 Plantilla8" "Plantilla9 Plantilla10"; /* Repites el nombre de la última área para llenar la cuadrícula */
-  }
-}
-@media (max-width: 576px) {
-  .GridPlantillas {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr); /* 2 columnas */
-    grid-template-rows: repeat(9, auto); /* 5 filas */
-    grid-template-areas: "Plantilla1" "Plantilla2" "Plantilla3" "Plantilla4" "Plantilla5" "Plantilla6" "Plantilla7" "Plantilla8" "Plantilla9";
-    column-gap: 1rem;
-    row-gap: 1rem;
-    justify-content: center;
   }
 }
 /*=============================================================================================================================
