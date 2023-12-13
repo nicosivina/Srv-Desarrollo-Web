@@ -748,6 +748,190 @@ body {
 }
 /*=============================================================================================================================
 =================================== PAGE SERVICIOS =================================================================================*/
+.sec-banner-srv1 {
+  display: flex;
+  justify-content: center;
+  height: 70vh;
+  align-items: center;
+  padding: 5rem 3rem;
+}
+.sec-banner-srv1 .sec-banner-srv1-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  gap: 2rem;
+}
+.sec-banner-srv1 .sec-banner-srv1-container .content-Srv1 {
+  margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sec-banner-srv2 {
+  display: flex;
+  justify-content: center;
+  height: 70vh;
+  align-items: center;
+  padding: 5rem 3rem;
+}
+.sec-banner-srv2 .sec-banner-srv2-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  gap: 2rem;
+}
+.sec-banner-srv2 .sec-banner-srv2-container .content-Srv2 {
+  margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .sec-banner-srv1, .sec-banner-srv2 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 3rem;
+  }
+  .sec-banner-srv1 .sec-banner-srv1-container, .sec-banner-srv1 .sec-banner-srv2-container, .sec-banner-srv2 .sec-banner-srv1-container, .sec-banner-srv2 .sec-banner-srv2-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .sec-banner-srv1 .sec-banner-srv1-container .content-Srv1 .container-fluid .text-banner-Srv1, .sec-banner-srv1 .sec-banner-srv1-container .content-Srv1 .container-fluid .text-banner-Srv2, .sec-banner-srv1 .sec-banner-srv1-container .content-Srv2 .container-fluid .text-banner-Srv1, .sec-banner-srv1 .sec-banner-srv1-container .content-Srv2 .container-fluid .text-banner-Srv2, .sec-banner-srv1 .sec-banner-srv2-container .content-Srv1 .container-fluid .text-banner-Srv1, .sec-banner-srv1 .sec-banner-srv2-container .content-Srv1 .container-fluid .text-banner-Srv2, .sec-banner-srv1 .sec-banner-srv2-container .content-Srv2 .container-fluid .text-banner-Srv1, .sec-banner-srv1 .sec-banner-srv2-container .content-Srv2 .container-fluid .text-banner-Srv2, .sec-banner-srv2 .sec-banner-srv1-container .content-Srv1 .container-fluid .text-banner-Srv1, .sec-banner-srv2 .sec-banner-srv1-container .content-Srv1 .container-fluid .text-banner-Srv2, .sec-banner-srv2 .sec-banner-srv1-container .content-Srv2 .container-fluid .text-banner-Srv1, .sec-banner-srv2 .sec-banner-srv1-container .content-Srv2 .container-fluid .text-banner-Srv2, .sec-banner-srv2 .sec-banner-srv2-container .content-Srv1 .container-fluid .text-banner-Srv1, .sec-banner-srv2 .sec-banner-srv2-container .content-Srv1 .container-fluid .text-banner-Srv2, .sec-banner-srv2 .sec-banner-srv2-container .content-Srv2 .container-fluid .text-banner-Srv1, .sec-banner-srv2 .sec-banner-srv2-container .content-Srv2 .container-fluid .text-banner-Srv2 {
+    text-align: center;
+  }
+  .sec-banner-srv1 .sec-banner-srv1-container .container-button-banner, .sec-banner-srv1 .sec-banner-srv2-container .container-button-banner, .sec-banner-srv2 .sec-banner-srv1-container .container-button-banner, .sec-banner-srv2 .sec-banner-srv2-container .container-button-banner {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 576px) {
+  .sec-banner-srv1, .sec-banner-srv2 {
+    padding: 3.5rem 1.5rem;
+  }
+}
+@media (max-width: 425px) {
+  .sec-banner-srv1, .sec-banner-srv2 {
+    padding: 3.5rem 1rem;
+  }
+}
+.sec-pricing {
+  padding: 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.sec-pricing .sec-pricing-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.sec-pricing .sec-pricing-title .sec-pricing-title-text {
+  margin: 0;
+}
+.sec-pricing .sec-pricing-content {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  align-items: flex-start;
+}
+.sec-pricing .sec-pricing-content .sec-pricing-content-list {
+  display: flex;
+  padding: 2rem 0rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.sec-pricing .sec-pricing-content .sec-pricing-content-list .pricing-item-list {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  align-self: stretch;
+}
+.sec-pricing .sec-pricing-content .pricing-content-card {
+  background: #1890FF;
+  border: 0.0625rem white solid;
+  border-radius: var(--bs-border-radius);
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.sec-pricing .sec-pricing-content .pricing-content-card .pricing-card-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.sec-pricing .sec-pricing-content .pricing-content-card .pricing-card-title .card-price {
+  font-size: 3.5rem;
+  margin: 0px;
+}
+.sec-pricing .sec-pricing-content .pricing-content-card .card-content {
+  padding: 1rem 0rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  align-self: stretch;
+  border-top: 0.0625rem white solid;
+  border-bottom: 0.0625rem white solid;
+}
+.sec-pricing .sec-pricing-content .pricing-content-card .card-content .card-content-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  margin: 0px;
+}
+.sec-pricing .sec-pricing-content .pricing-content-card .card-content .card-content-list .card-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  align-self: stretch;
+}
+.sec-pricing .sec-pricing-content .pricing-content-card .card-content .card-content-list .card-item .item-text {
+  margin: 0px;
+}
+.sec-pricing .sec-pricing-content .pricing-content-card .pricing-button {
+  width: 100%;
+  height: 3rem;
+  border-radius: var(--bs-border-radius);
+  display: flex;
+  padding: 0.75rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  align-self: stretch;
+  font-size: 1.125rem;
+}
+
+@media (max-width: 768px) {
+  .sec-pricing .sec-pricing-content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 576px) {
+  .sec-pricing {
+    padding: 2rem 2rem;
+  }
+}
+@media (max-width: 425px) {
+  .sec-pricing {
+    padding: 2rem 1rem;
+  }
+}
 /*=============================================================================================================================
 =================================== PAGE TEMPLATES =================================================================================*/
 /*=============================================================================================================================
@@ -1066,146 +1250,6 @@ body {
     column-gap: 1rem;
     row-gap: 3rem;
     justify-content: center;
-  }
-}
-.sectionBanner-Srv1 {
-  display: flex;
-  height: 80vh;
-  align-items: center;
-  padding: 7rem 3rem;
-}
-
-.container-banner-Srv1 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 100%;
-  gap: 2rem;
-}
-
-.banner-contenido-Srv1 {
-  margin-bottom: 2.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.sectionBanner-Srv2 {
-  display: flex;
-  height: 80vh;
-  align-items: center;
-  padding: 7rem 3rem;
-}
-
-.container-banner-Srv2 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 100%;
-  gap: 2rem;
-}
-
-.banner-contenido-Srv2 {
-  margin-bottom: 2.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.section-Pricing {
-  padding: 7rem 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 5rem;
-}
-
-.tituloPrincing {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1rem;
-}
-
-.textoPricing {
-  margin: 0;
-}
-
-.contenidoPricing {
-  display: flex;
-  align-items: center;
-  gap: 4rem;
-  align-items: flex-start;
-}
-
-.listaDescripcion {
-  display: flex;
-  padding: 2rem 0rem;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 2rem;
-}
-
-.itemLista {
-  display: flex;
-  align-items: flex-start;
-  gap: 1.5rem;
-  align-self: stretch;
-}
-
-@media (max-width: 1024px) {
-  .contenidoPricing {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    align-items: flex-start;
-  }
-  .detallePricing {
-    padding: 0;
-  }
-}
-@media (max-width: 768px) {
-  .sectionBanner-Srv1, .sectionBanner-Srv2 {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 4rem 3rem;
-  }
-  .container-banner-Srv1, .container-banner-Srv2 {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .banner-contenido-Srv1 {
-    justify-content: center;
-  }
-  .text-banner-Srv1, .text-banner-Srv2 {
-    text-align: center;
-  }
-  .section-Pricing {
-    padding: 4rem 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 2.5rem;
-  }
-}
-@media (max-width: 576px) {
-  .sectionBanner-Srv1, .sectionBanner-Srv2 {
-    padding: 3.5rem 1.5rem;
-  }
-  .section-Pricing {
-    padding: 2rem 1.5rem;
-  }
-}
-@media (max-width: 425px) {
-  .sectionBanner-Srv1, .sectionBanner-Srv2 {
-    padding: 3.5rem 1rem;
-  }
-  .section-Pricing {
-    padding: 2rem 1rem;
   }
 }
 /*=============================================================================================================================
